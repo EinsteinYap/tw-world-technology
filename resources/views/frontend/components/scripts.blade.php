@@ -1,0 +1,12 @@
+<script src="{{ asset('frontend/assets/js/lib/jquery-3.0.0.min.js') }}"></script>
+    <script src="{{ asset('frontend/assets/js/lib/jquery-migrate-3.0.0.min.js') }}"></script>
+    <script src="{{ asset('frontend/assets/js/lib/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('frontend/assets/js/lib/wow.min.js') }}"></script>
+    <script src="{{ asset('frontend/assets/js/lib/jquery.fancybox.js') }}"></script>
+    <script src="{{ asset('frontend/assets/js/lib/lity.js') }}"></script>
+    <script src="{{ asset('frontend/assets/js/lib/swiper.min.js') }}"></script>
+    <script src="{{ asset('frontend/assets/js/lib/jquery.waypoints.min.js') }}"></script>
+    <script src="{{ asset('frontend/assets/js/lib/jquery.counterup.js') }}"></script>
+    <!-- <script src="{{ asset('frontend/assets/js/lib/pace.js') }}"></script> -->
+    <script src="{{ asset('frontend/assets/js/lib/scrollIt.min.js') }}"></script>
+    <script src="{{ asset('frontend/assets/js/main.js') }}"></script>

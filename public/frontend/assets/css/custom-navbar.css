@@ -1,0 +1,10 @@
+/* navbar */
+@media (min-width: 992px) {
+    .navbar.style-2 {
+        background: var(--color-main-grad) !important;
+      }
+    }
+
+
+
+  
