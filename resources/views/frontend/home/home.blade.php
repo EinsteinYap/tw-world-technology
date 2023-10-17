@@ -711,8 +711,8 @@
             <div class="container">
                 <div class="content text-center text-white">
                     <p class="op-7 mb-70 text-uppercase">Let us opportunity to help you!</p>
-                    <h2 class="ltspc-20 text-uppercase fs-1 lh-1 mb-50">(+6017) 273 9455</h2>
-                    <h4 class="fw-normal mb-20 op-9">einsteinyap2014@TW-WORLD-TECHNOLOGY.com</h4>
+                    {{-- <h2 class="ltspc-20 text-uppercase fs-1 lh-1 mb-50">(+6017) 273 9455</h2> --}}
+                    <h4 class="fw-normal mb-20 op-9">twworldcom@gmail.com</h4>
                     <h4 class="fw-normal mb-30 op-7">Binjai 8 ， KLCC</h4>
                     <div class="text-center">
                         <a href="{{ route('contact') }}" class="sm-butn btn border text-white radius-9 hover-lightBlue border-lightBlue m-2">

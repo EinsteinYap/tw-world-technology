@@ -8,7 +8,7 @@
                 </div>
                 <div class="col-lg-4 col-10">
                     <div class="foot_links text-uppercase text-center small">
-                    <a href="index.php" class="mx-4">
+                    <a href="{{ route('home') }}" class="mx-4">
                             Home
                         </a>
                         <a href="#" class="mx-4">
@@ -58,7 +58,7 @@
             <div class="text-center mt-30">
                 <div class="small">
                     <span class="op-6">© 2023 Copyrights by </span>
-                    <a href="#">TW World Technology (M）Sdn Bhd.</a>
+                    <a href="#">TW World Technology (M）Sdn Bhd. 202301019787 (1513709-P)</a>
                     <span class="op-6"> All Rights Reserved.</span>
                 </div>
             </div>

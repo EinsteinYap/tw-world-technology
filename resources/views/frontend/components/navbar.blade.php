@@ -3,8 +3,8 @@
        
     <div class="container">
             <a class="navbar-brand" href="{{ route('home') }}" >
-                <h4 class="text-logo" >TW WORLD <br>TECHNOLOGY</h4>
-                <!-- <img style="border: 5px solid gold;" src="assets/img/logo_main-tranparent.png" alt=""> -->
+                {{-- <h4 class="text-logo" >TW WORLD <br>TECHNOLOGY</h4> --}}
+              <img  src="{{ asset('frontend/assets/img/logos/tw_logo.png') }}"  alt=""> 
             </a>
             @if(Route::is('home')) 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"

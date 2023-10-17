@@ -37,8 +37,8 @@
                     <p>We will contact again after receive your request in 24h</p>
                 </div>
                 <div class="text-center mb-100">
-                    <h2 class="ltspc-20 text-uppercase fs-1 lh-1 mb-50 mt-30 color-blue5">(+60) 17 273 9455</h2>
-                    <h4 class="fw-normal mb-20 color-000">einsteinyap2014@gmail.com</h4>
+                    {{-- <h2 class="ltspc-20 text-uppercase fs-1 lh-1 mb-50 mt-30 color-blue5">(+60) 17 273 9455</h2> --}}
+                    <h4 class="fw-normal mb-20 color-000">twworldcom@gmail.com</h4>
                     <h4 class="fw-normal mb-10 color-000">Binjai 8 Premium Soho, Persiaran KLCC</h4>
                 </div>
 
