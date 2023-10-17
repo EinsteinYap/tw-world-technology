@@ -4,6 +4,9 @@
 <head>
 @include('frontend/components/head')
 <link rel="stylesheet" href="{{ asset('frontend/assets/css/sbox.css') }}" /> 
+{{-- <link rel="stylesheet" href="{{ asset('frontend/assets/css/glass-ball.css') }}" />  --}}
+<link rel="stylesheet" href="{{ asset('frontend/assets/css/neon.css') }}" /> 
+<link rel="stylesheet" href="{{ asset('frontend/assets/css/abstract.css') }}" /> 
 </head>
 
 <body>
@@ -20,14 +23,20 @@
     <header class="style-2 overflow-hidden"  data-scroll-index="1">
         <div class="container">
             <div class="row justify-content-center">
+                <img src="{{ asset('frontend/assets/img/header/tw-world-logo-removebg.png') }}" alt="" class="">
+            </div>
+            <div class="row justify-content-center">
+               
                 <div class="col-lg-10">
                     <div class="content text-center text-light text-capitalize">
+                      
                         <div class="top_info">
-                            <h1 class="text-uppercase main-title">
+                            
+                            {{-- <h1 class="text-uppercase main-title">
                                 <span>TW WORLD</span>
                                 <span>TECHNOLOGY</span>
             
-                            </h1>
+                            </h1> --}}
                             <p class="fw-light text-uppercase">
                                 Best Solutions for <br> <strong class="fw-bold">Big Data & Technology</strong> Services
                             </p>
@@ -59,21 +68,30 @@
                             through <br> custom software development, product design, QA and consultancy
                             services.
                         </p>
-                        <a href="#" class="btn sm-butn border text-white radius-9 mt-60 hover-darkBlue">
-                            <span>More About Us</span>
+                        <a class="neon-button" href="{{ route('contact') }}" style="filter: hue-rotate(180deg); !important">
+                            <span class="neon-inner"></span>
+                            <span class="neon-inner"></span>
+                            <span class="neon-inner"></span>
+                            <span class="neon-inner"></span>
+                            Contact us
                         </a>
+
+                        {{-- <a href="#" class="btn sm-butn border text-white radius-9 mt-60 hover-darkBlue">
+                            <span>More About Us</span>
+                        </a> --}}
                     </div>
                 </div>
             </div>
         </div>
-        <img src="{{ asset('frontend/assets/img/header/space.jpg') }}" alt="" class="head_shape2 wave">
-        <!-- <img src="assets/img/header/header_2.png" alt="" class="head_shape2 wave"> -->
+
+        <img src="{{ asset('frontend/assets/img/header/tech-background.jpg') }}" alt="" class="head_shape2 wave">
+
     </header>
     <!-- ====== end header ====== -->
-
+    {{-- @include('frontend/components/glass-ball') --}}
+    @include('frontend/components/abstract') 
     <!--Contents-->
     <main>
-
         <!-- ====== start services ====== -->
         <section class="services_projects section-padding">
             <div class="container">
@@ -186,9 +204,15 @@
                     <div class="swiper-button-prev radius-50 bg-transparent border brd-light"></div>
                 </div>
                 <div class="text-center">
-                    <a href="page-portfolio-5.html" class="btn sm-butn border text-white radius-9 mt-60 hover-darkBlue">
-                        <span>See All Projects</span>
+                    
+                    <a class="neon-button" href="{{ route('contact') }}" style="filter: hue-rotate(180deg); !important">
+                        <span class="neon-inner"></span>
+                        <span class="neon-inner"></span>
+                        <span class="neon-inner"></span>
+                        <span class="neon-inner"></span>
+                        See more Projects
                     </a>
+                   
                 </div>
             </div>
         </section>
@@ -243,8 +267,12 @@
                                     </div>
                                 </li>
                             </ul>
-                            <a href="page-contact-5.html" class="btn sm-butn border text-white radius-9 mt-70 hover-darkBlue">
-                                <span>Request A Consultation</span>
+                            <a class="neon-button" href="{{ route('contact') }}" style="filter: hue-rotate(180deg); !important">
+                                <span class="neon-inner"></span>
+                                <span class="neon-inner"></span>
+                                <span class="neon-inner"></span>
+                                <span class="neon-inner"></span>
+                                Request a consulation
                             </a>
                         </div>
                     </div>
@@ -715,8 +743,12 @@
                     <h4 class="fw-normal mb-20 op-9">twworldcom@gmail.com</h4>
                     <h4 class="fw-normal mb-30 op-7">Binjai 8 ， KLCC</h4>
                     <div class="text-center">
-                        <a href="{{ route('contact') }}" class="sm-butn btn border text-white radius-9 hover-lightBlue border-lightBlue m-2">
-                            <span>Let’s Chat</span>
+                        <a class="neon-button" href="{{ route('contact') }}" style="filter: hue-rotate(180deg); !important">
+                            <span class="neon-inner"></span>
+                            <span class="neon-inner"></span>
+                            <span class="neon-inner"></span>
+                            <span class="neon-inner"></span>
+                            Let's Chat
                         </a>
 
                     </div>
