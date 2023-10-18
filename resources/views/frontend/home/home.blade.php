@@ -7,10 +7,12 @@
 {{-- <link rel="stylesheet" href="{{ asset('frontend/assets/css/glass-ball.css') }}" />  --}}
 <link rel="stylesheet" href="{{ asset('frontend/assets/css/neon.css') }}" /> 
 <link rel="stylesheet" href="{{ asset('frontend/assets/css/abstract.css') }}" /> 
+<link rel="stylesheet" href="{{ asset('frontend/assets/css/neon-arrow.css') }}" /> 
+<link rel="stylesheet" href="{{ asset('frontend/assets/css/3d-building.css') }}" /> 
 </head>
 
 <body>
-
+   
     <!-- ====== start loading page ====== -->
     @include('frontend/components/loader')
     <!-- ====== end loading page ====== -->
@@ -61,6 +63,7 @@
                                 <img src="{{ asset('frontend/assets/img/about/about_logos/5.png') }}" alt="">
                             </a>
                         </div>
+                        
                         <h4>We can help to maintain and modernize <br> your IT infrastructure & solve various
                             infrastructure-specific <br> issues a business may face.</h4>
                         <p class="d-block mt-40">TW World Technology (M）Sdn Bhd is the partner of choice for many of the world’s leading
@@ -84,14 +87,18 @@
             </div>
         </div>
 
-        <img src="{{ asset('frontend/assets/img/header/tech-background.jpg') }}" alt="" class="head_shape2 wave">
-
+        {{-- <img src="{{ asset('frontend/assets/img/header/tech-background.jpg') }}" alt="" class="head_shape2 wave"> --}}
+        @include('frontend/components/neon-arrow')
     </header>
     <!-- ====== end header ====== -->
     {{-- @include('frontend/components/glass-ball') --}}
-    @include('frontend/components/abstract') 
+    {{-- @include('frontend/components/abstract')  --}}
+    @include('frontend/components/3d-building') 
+
+
     <!--Contents-->
     <main>
+     
         <!-- ====== start services ====== -->
         <section class="services_projects section-padding">
             <div class="container">
@@ -739,8 +746,8 @@
             <div class="container">
                 <div class="content text-center text-white">
                     <p class="op-7 mb-70 text-uppercase">Let us opportunity to help you!</p>
-                    {{-- <h2 class="ltspc-20 text-uppercase fs-1 lh-1 mb-50">(+6017) 273 9455</h2> --}}
-                    <h4 class="fw-normal mb-20 op-9">twworldcom@gmail.com</h4>
+                    <h2 class="ltspc-20 text-uppercase fs-1 lh-1 mb-50">(+603) 4810 4918</h2>
+                    <h4 class="fw-normal mb-20 op-9">admin@tw-world-technology.com</h4>
                     <h4 class="fw-normal mb-30 op-7">Binjai 8 ， KLCC</h4>
                     <div class="text-center">
                         <a class="neon-button" href="{{ route('contact') }}" style="filter: hue-rotate(180deg); !important">
@@ -769,5 +776,6 @@
     <!-- ====== request ====== -->
 
     @include('frontend/components/scripts')
+    <script src="{{ asset('frontend/assets/js/neon-arrow.js') }}"></script>
 </body>
 </html>

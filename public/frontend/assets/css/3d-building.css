@@ -1,0 +1,223 @@
+@media (max-width: 747px) {
+    .land {
+        display: none !important;
+    }
+}
+.land{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	overflow: hidden;
+	background: linear-gradient(45deg, #833434, #064667);
+}
+#city 
+{
+	position: relative;
+	transform-style: preserve-3d;
+	animation: animate 10s linear infinite;
+}
+@keyframes animate 
+{
+	0% 
+	{
+		transform: rotateX(-30deg) rotateY(360deg);
+	}
+	100% 
+	{
+		transform: rotateX(-30deg) rotateY(0deg);
+	}
+}
+#city::before 
+{
+	content: '';
+	position: absolute;
+	top: -150vh;
+	left: 0;
+	width: 400vh;
+	height: 400vh;
+	background: #333;
+	background: linear-gradient(45deg, #833434, #064667);
+	transform: translate(-50%,250px) rotateX(90deg);
+}
+.skyscrapper
+{
+	position: relative;
+	width: 200px;
+	height: 600px;
+	transform-style: preserve-3d;
+}
+.skyscrapper .top
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 200px;
+	background: var(--clr);
+	display: flex;
+	align-items: center;
+	transform: rotateX(90deg) translateZ(100px);
+	box-shadow: inset 0 0 150px rgba(0,0,0,0.35), inset 0 0 0 5px rgba(0,0,0,0.25);
+}
+.skyscrapper div
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+}
+.skyscrapper div span
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: inset 0 0 25px rgba(0,0,0,0.25);
+}
+.skyscrapper div span:nth-child(1)
+{
+	transform: rotateY(0deg) translate3d(0,0,100px);
+	background-image: linear-gradient(to bottom, transparent 50%,  var(--clr) 50%),linear-gradient(to right, #999 50%, var(--clr) 50%);
+  background-size: 6px 6px;
+}
+.skyscrapper div span:nth-child(2)
+{
+	transform: rotateY(90deg) translate3d(0,0,100px);
+	
+	background-image: linear-gradient(to right, #999 50%, var(--clr) 50%);
+  background-size: 6px 6px;
+}
+.skyscrapper div span:nth-child(3)
+{
+	transform: rotateY(180deg) translate3d(0,0,100px);
+	background-image: linear-gradient(to bottom, transparent 50%,  var(--clr) 50%),linear-gradient(to right, #999 50%, var(--clr) 50%);
+  background-size: 6px 6px;
+}
+.skyscrapper div span:nth-child(4)
+{
+	transform: rotateY(270deg) translate3d(0,0,100px);
+	background-image: linear-gradient(to right, #999 50%, var(--clr) 50%);
+  background-size: 6px 6px;
+}
+
+.skyscrapper .bottom
+{
+	content: '';
+	position: absolute;
+	left: -25px;
+	width: 250px;
+	height: 250px;
+	background: var(--clr);
+	display: flex;
+	align-items: center;
+	transform: rotateX(90deg) translateZ(-480px);
+	border: 4px solid var(--clr);
+}
+.skyscrapper.two 
+{
+	position: absolute;
+	top: 0;
+	left: 300px;
+	transform-origin: bottom;
+	transform: translateZ(50px) scaleY(1.15);
+}
+.skyscrapper.three 
+{
+	position: absolute;
+	top: 0;
+	left: -300px;
+	transform-origin: bottom;
+	transform: translateZ(-100px) scaleY(1.25);
+}
+.skyscrapper.four 
+{
+	position: absolute;
+	top: 0;
+	left: -200px;
+	transform-origin: bottom;
+	transform: translateZ(-400px) scaleX(0.5);
+}
+.skyscrapper.five 
+{
+	position: absolute;
+	top: 0;
+	left: 100px;
+	transform-origin: bottom;
+	transform: translateZ(-600px) scaleY(1.75);
+}
+.skyscrapper.six 
+{
+	position: absolute;
+	top: 0;
+	left: 100px;
+	transform-origin: bottom;
+	transform: translateZ(600px) scaleY(1.25);
+}
+.skyscrapper.seven 
+{
+	position: absolute;
+	top: 0;
+	left: 500px;
+	transform-origin: bottom;
+	transform: translateZ(400px) scaleY(0.5);
+}
+.skyscrapper.eight 
+{
+	position: absolute;
+	top: 0;
+	left: 500px;
+	transform-origin: bottom;
+	transform: translateZ(-400px) scaleX(2);
+}
+.skyscrapper.nine 
+{
+	position: absolute;
+	top: 0;
+	left: -500px;
+	transform-origin: bottom;
+	transform: translateZ(450px) scaleY(2);
+}
+h3.text1
+{
+	position: absolute;
+	transform-style: preserve-3d;
+	color: #fff;
+	font-size: 8em;
+	transform: translateX(-200px) translateY(-100px) translateZ(200px);
+	text-transform: uppercase;
+	backface-visibility: hidden;
+	-webkit-text-stroke: 2px #000
+}
+h3.text2
+{
+	position: absolute;
+	transform-style: preserve-3d;
+	color: #fff;
+	font-size: 20em;
+	text-align: center;
+	transform: translateX(-700px) translateZ(-100px) rotateY(270deg);
+	text-transform: uppercase;
+	backface-visibility: hidden;
+	-webkit-text-stroke: 2px #000
+}
+h3.text3
+{
+	position: absolute;
+	transform-style: preserve-3d;
+	color: #fff;
+	font-size: 6em;
+	white-space: nowrap;
+	transform: translateY(50px) translateZ(-200px) rotateY(180deg);
+	text-transform: uppercase;
+	backface-visibility: hidden;
+	-webkit-text-stroke: 2px #000
+}
