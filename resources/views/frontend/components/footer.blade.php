@@ -1,3 +1,12 @@
+    <!-- ====== start what apps ====== -->
+    <section>
+        <div class="" style="position:fixed; bottom:5px; right:5px;cursor:pointer;z-index:99;">
+            <a href="https://api.whatsapp.com/send?phone=60348104918&amp;text=Hi%20I%20am%20Interested%20in%20Your%20Digital%20Service">
+                <img width="80px" height="80px" src="{{ asset('frontend/assets/img/whatsapp-messenger.png')}}">
+            </a>
+        </div>
+    </section>
+         <!-- ====== end What apps ====== -->
 <footer class="style-2 pt-80 pb-60 bg-darkBlue border-top brd-light text-white">
         <div class="container">
             <div class="row align-items-center">
@@ -66,8 +75,8 @@
     </footer>
 
         <!-- ====== start to top button ====== -->
-        <a href="#" class="to_top">
+        {{-- <a href="#" class="to_top">
         <i class="bi bi-chevron-up"></i>
         <small>top</small>
-    </a>
-    <!-- ====== end to top button ====== -->
+        </a> --}}
+        <!-- ====== end to top button ====== -->
